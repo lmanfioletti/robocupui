@@ -18,9 +18,6 @@ const Sidebar: React.FC = () => {
   };
   return <aside className={cn('bg-white border-r border-gray-200 transition-all duration-300', collapsed ? 'w-16' : 'w-64')}>
       <div className="h-full flex flex-col">
-        <div className={cn('flex items-center h-16 border-b border-gray-200', collapsed ? 'justify-center' : 'px-4')}>
-          {!collapsed && <h1 className="text-xl font-bold text-blue-600">BotScore</h1>}
-        </div>
         <div className="flex-1 overflow-y-auto py-4 px-2">
           <nav className="space-y-1">
             <NavLink to="/dashboard" end className={navLinkClass}>

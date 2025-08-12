@@ -11,7 +11,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="text-2xl font-bold text-blue-600">
-            BotScore
+            Robocup UI
           </Link>
           <div className="hidden md:flex items-center space-x-8">
             <nav className="flex items-center space-x-6">

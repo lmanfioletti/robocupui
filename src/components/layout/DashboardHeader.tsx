@@ -1,9 +1,10 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../auth/AuthContext';
 import { LogOutIcon, BellIcon } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Badge } from '../ui/badge';
+
 const DashboardHeader: React.FC = () => {
   const {
     currentUser,
@@ -52,7 +53,9 @@ const DashboardHeader: React.FC = () => {
   };
   return <header className="bg-white border-b border-gray-200 py-3 px-4">
       <div className="flex items-center justify-between">
-        <h1 className="text-xl font-semibold text-gray-800">Dashboard</h1>
+        <Link to="/dashboard">
+          <h1 className="text-xl font-bold text-blue-600">Robocup UI</h1>
+        </Link>
         <div className="flex items-center space-x-4">
           <Button variant="ghost" size="icon" className="text-gray-500 hover:text-gray-700 relative">
             <BellIcon size={20} />
